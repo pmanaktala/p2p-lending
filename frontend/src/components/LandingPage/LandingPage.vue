@@ -31,7 +31,7 @@
         >Lending Area</router-link
       >
     </div>
-    <div class="card card--twoRows">
+    <!-- <div class="card card--twoRows">
       <div class="card__title-section">
         <div class="title">Management</div>
         <div class="subtitle">
@@ -41,7 +41,7 @@
       <router-link :to="{ name: 'ico' }" class="btn"
         >Management Area</router-link
       >
-    </div>
+    </div> -->
   </div>
 </template>
 

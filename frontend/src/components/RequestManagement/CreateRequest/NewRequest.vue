@@ -50,6 +50,7 @@
           }"
         />
         <label for="newRequest__description">Request Description</label>
+        <div style="padding:15px;">Please provide all the details of the startup idea/Reason for lending, including, how you will provide the gurantee of returning the money, e.g Stake in the startup etc.</div>
       </div>
       <div class="newRequest__button btn btn--form" @click="submit">Submit</div>
     </div>

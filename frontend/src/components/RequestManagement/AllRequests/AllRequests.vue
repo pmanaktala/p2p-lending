@@ -9,12 +9,12 @@
           v-bind:class="{ 'allRequests__sortOption--active': !trustedRequests }"
           >All</div
         >
-        <div
+        <!-- <div
           class="allRequests__sortOption"
           @click="getTrustedRequests"
           v-bind:class="{ 'allRequests__sortOption--active': trustedRequests }"
           >Trusted</div
-        >
+        > -->
       </div>
     </div>
     <div class="table__wrapper">
@@ -26,7 +26,7 @@
             <th class="table__head">Amount</th>
             <th class="table__head">Payback</th>
             <th class="table__head table__head--purpose">Purpose</th>
-            <th class="table__head">Trusted</th>
+            <!-- <th class="table__head">Trusted</th> -->
             <th class="table__head table__head--option"></th>
           </tr>
         </thead>
@@ -41,7 +41,7 @@
             <td class="table__data">{{ item.askAmount }} ETH</td>
             <td class="table__data">{{ item.paybackAmount }} ETH</td>
             <td class="table__data">{{ item.purpose }}</td>
-            <td class="table__data">
+            <!-- <td class="table__data">
               <div
                 class="table__status table__status--trusted"
                 v-if="item.verifiedAsker"
@@ -50,7 +50,7 @@
               <div class="table__status table__status--untrusted" v-else
                 >No</div
               >
-            </td>
+            </td> -->
             <td class="table__data">
               <div class="btn btn--table" @click="lend(item.address)">Lend</div>
             </td>

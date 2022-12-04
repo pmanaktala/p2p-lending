@@ -1,15 +1,39 @@
+### Install Python 3.8 either as VE or Natively, but it needs python 3.8 to work
+
+
 [![Build Status](https://travis-ci.org/adorsys/p2p-lending.svg?branch=master)](https://travis-ci.org/adorsys/p2p-lending)
 
 # P2P-Lending
 
 ## Table of Contents
 
+- [Modifications to make the code run](#install-nvm)
 - [About the Project](#about-the-project)
   - [Challenges](#challenges)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+
+### Install NVM : 
+    brew update
+    brew install nvm
+    mkdir ~/.nvm
+    
+    echo "export NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> .zshrc
+    source ~/.zshrc
+
+### Use NVM to install node 12
+    nvm install 12.13.0
+
+### Update the following versions in dependicies
+
+    "web3": "1.8.1",
+    "websocket": "^1.0.34"
+
+### Setup python 3.8 as venv and activate it before building ahead.
+
+<br>
 
 <!-- ABOUT THE PROJECT -->
 
